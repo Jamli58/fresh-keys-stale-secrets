@@ -1,0 +1,6 @@
+key=llama8b served=llama3.1-8b-instruct-bf16 model_dir=/root/autodl-tmp/models/llama8b args=--dtype bfloat16 --max-model-len 8192 --max-num-seqs 256
+VLLM_USE_FLASHINFER_SAMPLER=0
+vllm 0.30.0 torch 2.13.0+cu130 cuda 13.0
+name, memory.total [MiB], driver_version
+NVIDIA RTX 6000D, 85651 MiB, 595.71.05
+{"object":"list","data":[{"id":"llama3.1-8b-instruct-bf16","object":"model","created":1790937711,"owned_by":"vllm","root":"/root/autodl-tmp/models/llama8b","parent":null,"max_model_len":8192,"permission":[{"id":"modelperm-8cef17b5c6473026","object":"model_permission","created":1790937711,"allow_create_engine":false,"allow_sampling":true,"allow_logprobs":true,"allow_search_indices":false,"allow_view":true,"allow_fine_tuning":false,"organization":"*","group":null,"is_blocking":false}]}]}

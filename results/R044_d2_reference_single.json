@@ -1,0 +1,153 @@
+{
+  "run": "R044_d2_reference_single",
+  "config": {
+    "eval_config": {
+      "n_firms": 300,
+      "n_dev": 50,
+      "tasks_per_firm": 2,
+      "seed": 1001,
+      "prior_seed": 2002,
+      "cues": true
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "frozen_solver": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75,
+      "n_samples": 4000
+    },
+    "n_maps": 20000,
+    "bandwidth": 0.03,
+    "laws": {
+      "default": {},
+      "irregular gaps (Dirichlet 0.1)": {
+        "gap_concentration": 0.1
+      }
+    },
+    "part": "single",
+    "total_seconds": 3702.8062472343445
+  },
+  "result": {
+    "default": {
+      "gaussian_vs_A0": {
+        "n": 2100,
+        "margin_hit_2pp": 0.11952380952380952,
+        "margin_hit_5pp": 0.29095238095238096,
+        "margin_mae_pp": 11.389870626693055,
+        "unit_cost_hit_10pct": 0.15761904761904763,
+        "unit_cost_median_rel_err": 0.32270643520990056,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.009523809523809525,
+        "advantage_margin_hit_5pp_ci": [
+          -0.027131782945736434,
+          0.04528580554034643
+        ],
+        "advantage_unit_cost_hit_10pct": -0.002380952380952381,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.03017353309888964,
+          0.02490487789346323
+        ]
+      },
+      "reference_vs_A0": {
+        "n": 2100,
+        "margin_hit_2pp": 0.11428571428571428,
+        "margin_hit_5pp": 0.29904761904761906,
+        "margin_mae_pp": 11.643213822165741,
+        "unit_cost_hit_10pct": 0.1657142857142857,
+        "unit_cost_median_rel_err": 0.3221477292752573,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.017619047619047618,
+        "advantage_margin_hit_5pp_ci": [
+          -0.01038863734803299,
+          0.04444522471910111
+        ],
+        "advantage_unit_cost_hit_10pct": 0.005714285714285714,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.016386921717571334,
+          0.027857864223719015
+        ]
+      },
+      "reference_vs_gaussian": {
+        "n": 2100,
+        "margin_hit_2pp": 0.11428571428571428,
+        "margin_hit_5pp": 0.29904761904761906,
+        "margin_mae_pp": 11.643213822165741,
+        "unit_cost_hit_10pct": 0.1657142857142857,
+        "unit_cost_median_rel_err": 0.3221477292752573,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.008095238095238095,
+        "advantage_margin_hit_5pp_ci": [
+          -0.01364522417153996,
+          0.030303030303030304
+        ],
+        "advantage_unit_cost_hit_10pct": 0.008095238095238095,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.005023522900235223,
+          0.021613832853025938
+        ]
+      }
+    },
+    "irregular gaps (Dirichlet 0.1)": {
+      "gaussian_vs_A0": {
+        "n": 2100,
+        "margin_hit_2pp": 0.10285714285714286,
+        "margin_hit_5pp": 0.25142857142857145,
+        "margin_mae_pp": 13.073939577432892,
+        "unit_cost_hit_10pct": 0.14904761904761904,
+        "unit_cost_median_rel_err": 0.3439429342402812,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": -0.03,
+        "advantage_margin_hit_5pp_ci": [
+          -0.07335241100021385,
+          0.012561299292214344
+        ],
+        "advantage_unit_cost_hit_10pct": -0.010952380952380953,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.0431759124851243,
+          0.020833333333333332
+        ]
+      },
+      "reference_vs_A0": {
+        "n": 2100,
+        "margin_hit_2pp": 0.10095238095238095,
+        "margin_hit_5pp": 0.2761904761904762,
+        "margin_mae_pp": 12.95049746525593,
+        "unit_cost_hit_10pct": 0.1523809523809524,
+        "unit_cost_median_rel_err": 0.3350927042125398,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": -0.005238095238095238,
+        "advantage_margin_hit_5pp_ci": [
+          -0.02704063528707622,
+          0.01619163596670758
+        ],
+        "advantage_unit_cost_hit_10pct": -0.007619047619047619,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.02401547578685653,
+          0.008646157818460454
+        ]
+      },
+      "reference_vs_gaussian": {
+        "n": 2100,
+        "margin_hit_2pp": 0.10095238095238095,
+        "margin_hit_5pp": 0.2761904761904762,
+        "margin_mae_pp": 12.95049746525593,
+        "unit_cost_hit_10pct": 0.1523809523809524,
+        "unit_cost_median_rel_err": 0.3350927042125398,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.024761904761904763,
+        "advantage_margin_hit_5pp_ci": [
+          -0.0101293137961406,
+          0.06022480420739724
+        ],
+        "advantage_unit_cost_hit_10pct": 0.0033333333333333335,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.02432509873770618,
+          0.030828516377649325
+        ]
+      }
+    }
+  }
+}

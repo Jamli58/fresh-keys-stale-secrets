@@ -1,0 +1,76 @@
+{
+  "model_id": "Qwen/Qwen2.5-32B-Instruct-AWQ",
+  "revision": "master",
+  "local_dir": "/root/autodl-tmp/models/qwen32b",
+  "verified_at": "2026-10-02T16:42:56+0800",
+  "ok": true,
+  "checked": {
+    "config.json": {
+      "sha256": "2bf6e9840c77e5ca4c5f8cada21b5530f4ebd36b2788dd2e2f0fe7ac62ec4284",
+      "size": 841,
+      "revision": "c473b74e114aa5ecd28a4dfa8d776240a05748c0"
+    },
+    "configuration.json": {
+      "sha256": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+      "size": 2,
+      "revision": "d5501cf1739d6c6a2dbda2f6784d4c1ed3ddee39"
+    },
+    "generation_config.json": {
+      "sha256": "9df8ac8558514924f3481a609f1e5590ab4416efc600b12ad805155d79581c59",
+      "size": 243,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "merges.txt": {
+      "sha256": "599bab54075088774b1733fde865d5bd747cbcc7a547c5bc12610e874e26f5e3",
+      "size": 1671839,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "model-00001-of-00005.safetensors": {
+      "sha256": "548f5c7078e297088c74bec4443bfe9e3b4183ee7457f328107c37a5eb861ea1",
+      "size": 3943575336,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "model-00002-of-00005.safetensors": {
+      "sha256": "735d1b5aa8ef01420f2079b355d84cfa7a4b37571d44715276b3b903c06d65d8",
+      "size": 3980134208,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "model-00003-of-00005.safetensors": {
+      "sha256": "f158db037c405677ea6ca21a5cb67a800ddc256217c722c0dee0eb31f3f75fb8",
+      "size": 3947411392,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "model-00004-of-00005.safetensors": {
+      "sha256": "ece82d2cd5ecc9691572aae55cf2d66fa52edd2c199d5a6dccb8182145bae59c",
+      "size": 3980134240,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "model-00005-of-00005.safetensors": {
+      "sha256": "1af3bf12ce80cf2f85bacb57a7d2fd584712a945f481cf394f0c7b17983269e5",
+      "size": 3477738728,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "model.safetensors.index.json": {
+      "sha256": "6b2c689e189baf9ad66f89403b9cf5c95a040a1e7926cda5056e9f48e0075ef8",
+      "size": 143195,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "tokenizer.json": {
+      "sha256": "c0382117ea329cdf097041132f6d735924b697924d6f6fc3945713e96ce87539",
+      "size": 7031645,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    },
+    "tokenizer_config.json": {
+      "sha256": "5b5d4f65d0acd3b2d56a35b56d374a36cbc1c8fa5cf3b3febbbfabf22f359583",
+      "size": 7305,
+      "revision": "e32fe74337b9acedda4555f41caddf6b278ddd86"
+    },
+    "vocab.json": {
+      "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910",
+      "size": 2776833,
+      "revision": "c39cb70d8af685325d505c6cd307c0d2656b6aaa"
+    }
+  },
+  "mismatched": [],
+  "missing": []
+}

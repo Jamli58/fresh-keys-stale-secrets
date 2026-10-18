@@ -1,0 +1,66 @@
+{
+  "run": "R003a",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "finqa_sample": 1108,
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "prior_draw_size": 2000,
+    "extreme_share": 0.2,
+    "d1_k_range": [
+      0.1,
+      10.0
+    ],
+    "d2_target_range": [
+      1.0,
+      1000000.0
+    ],
+    "d2_n_intervals": 64,
+    "d3_domain": {
+      "money": [
+        0.0,
+        50000.0
+      ],
+      "count": [
+        0.0,
+        20000.0
+      ],
+      "percent": [
+        0.0,
+        100.0
+      ]
+    },
+    "display_sig_digits": 6,
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "generator_extreme_efficiency_range": [
+      1.2,
+      2.0
+    ]
+  },
+  "result": {
+    "finqa_test_items": 1147,
+    "arithmetic_only_items": 1108,
+    "sampled": 1108,
+    "executor_matches_gold": 1.0,
+    "display_collision": 0.0,
+    "reconstruction_matches_gold": 1.0,
+    "reconstruction_equals_original_execution": 1.0,
+    "disguised_program_matches_gold": 0.02256317689530686,
+    "has_year_range_integer": 0.8700361010830325,
+    "has_special_28_31": 0.37635379061371843,
+    "note": "LLM-free: gold program stands in for remote code. Zhang et al. accuracy needs an LLM (BLOCKED)."
+  }
+}

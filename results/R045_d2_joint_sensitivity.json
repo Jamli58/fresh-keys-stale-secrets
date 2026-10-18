@@ -1,0 +1,234 @@
+{
+  "run": "R045_d2_joint_sensitivity",
+  "config": {
+    "part": "sensitivity",
+    "frozen_solver": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75,
+      "n_samples": 4000
+    },
+    "n_nuisance": 400,
+    "obs_sd": 0.03,
+    "nuisance": "shared across queries (integrated once over the history)",
+    "modelled_fields": "prices and costs of all products shown (other products integrated over class priors)",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "total_seconds": 15529.496977090836
+  },
+  "result": {
+    "obs_sd=0.03, n_nuisance=1600": {
+      "D2/fresh": {
+        "1": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.23333333333333334,
+          "margin_hit_5pp_ci": [
+            0.15555555555555556,
+            0.31666666666666665
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.22777777777777777,
+          "unit_cost_hit_10pct_ci": [
+            0.14444444444444443,
+            0.32222222222222224
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "16": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.5444444444444444,
+          "margin_hit_5pp_ci": [
+            0.45555555555555555,
+            0.6333333333333333
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.37222222222222223,
+          "unit_cost_hit_10pct_ci": [
+            0.28888888888888886,
+            0.45555555555555555
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": 0.3111111111111111,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          0.2,
+          0.4222222222222222
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": 0.14444444444444443,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          0.027777777777777776,
+          0.25555555555555554
+        ]
+      },
+      "D2/reuse": {
+        "1": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.23333333333333334,
+          "margin_hit_5pp_ci": [
+            0.15555555555555556,
+            0.31666666666666665
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.22777777777777777,
+          "unit_cost_hit_10pct_ci": [
+            0.14444444444444443,
+            0.32222222222222224
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "16": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.2388888888888889,
+          "margin_hit_5pp_ci": [
+            0.15555555555555556,
+            0.3277777777777778
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.2222222222222222,
+          "unit_cost_hit_10pct_ci": [
+            0.1388888888888889,
+            0.3111111111111111
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": 0.005555555555555556,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          -0.044444444444444446,
+          0.05555555555555555
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": -0.005555555555555556,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          -0.09444444444444444,
+          0.07777777777777778
+        ]
+      },
+      "fresh_minus_reuse": {
+        "margin_hit_5pp": {
+          "contrast": 0.3055555555555556,
+          "contrast_ci": [
+            0.19986111111111235,
+            0.4166666666666667
+          ]
+        },
+        "unit_cost_hit_10pct": {
+          "contrast": 0.15,
+          "contrast_ci": [
+            0.05,
+            0.25
+          ]
+        }
+      }
+    },
+    "obs_sd=0.1, n_nuisance=400": {
+      "D2/fresh": {
+        "1": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.2388888888888889,
+          "margin_hit_5pp_ci": [
+            0.16111111111111112,
+            0.3277777777777778
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.20555555555555555,
+          "unit_cost_hit_10pct_ci": [
+            0.12222222222222222,
+            0.29444444444444445
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "16": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.5611111111111111,
+          "margin_hit_5pp_ci": [
+            0.48333333333333334,
+            0.6388888888888888
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.31666666666666665,
+          "unit_cost_hit_10pct_ci": [
+            0.2388888888888889,
+            0.4
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": 0.32222222222222224,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          0.21666666666666667,
+          0.42777777777777776
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": 0.1111111111111111,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          0.011111111111111112,
+          0.2111111111111111
+        ]
+      },
+      "D2/reuse": {
+        "1": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.2388888888888889,
+          "margin_hit_5pp_ci": [
+            0.16111111111111112,
+            0.3277777777777778
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.20555555555555555,
+          "unit_cost_hit_10pct_ci": [
+            0.12222222222222222,
+            0.29444444444444445
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "16": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.21666666666666667,
+          "margin_hit_5pp_ci": [
+            0.12777777777777777,
+            0.3111111111111111
+          ],
+          "a0_margin_hit_5pp": 0.2,
+          "unit_cost_hit_10pct": 0.17777777777777778,
+          "unit_cost_hit_10pct_ci": [
+            0.1,
+            0.2611111111111111
+          ],
+          "a0_unit_cost_hit_10pct": 0.15
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": -0.022222222222222223,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          -0.08888888888888889,
+          0.044444444444444446
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": -0.027777777777777776,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          -0.09444444444444444,
+          0.03333333333333333
+        ]
+      },
+      "fresh_minus_reuse": {
+        "margin_hit_5pp": {
+          "contrast": 0.34444444444444444,
+          "contrast_ci": [
+            0.23333333333333334,
+            0.45555555555555555
+          ]
+        },
+        "unit_cost_hit_10pct": {
+          "contrast": 0.1388888888888889,
+          "contrast_ci": [
+            0.05,
+            0.22777777777777777
+          ]
+        }
+      }
+    }
+  }
+}

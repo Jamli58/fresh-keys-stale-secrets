@@ -1,0 +1,25 @@
+{
+ "config": {
+  "eval": {
+   "n_firms": 300,
+   "n_dev": 50,
+   "tasks_per_firm": 2,
+   "seed": 1001,
+   "prior_seed": 2002,
+   "cues": true
+  },
+  "defense_seeds": 3,
+  "d3o_draws": 5
+ },
+ "result": {
+  "n_firms": 300,
+  "test_prompts": 500,
+  "test_product_observations": 700,
+  "test_distinct_products": 450,
+  "test_rows_with_defense_seeds": 2100,
+  "generated_products_all_firms": 1624,
+  "d3o_perturbation_observations": 8120,
+  "prompt_product_observations_all_firms": 840,
+  "d3_perturbation_observations": 2520
+ }
+}

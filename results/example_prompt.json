@@ -1,0 +1,27 @@
+{
+  "firm_id": "F00050",
+  "sector": "apparel_ecommerce",
+  "task": "margin_review",
+  "plain": "Kraesmelpox Works is based in Peoria, IL. We compete on low prices and high volume. We are Kraesmelpox Works, a small Apparel E-commerce business. Here are our main products. Senvas jacket: price 104.03, unit cost 90.01. Lathkael jacket: price 173.46, unit cost 149.54. Lertas jacket: price 82.92, unit cost 74.59. Which product has the weakest margin, and what would you change first?",
+  "truth": [
+    {
+      "price": 104.03,
+      "unit_cost": 90.01,
+      "margin": 0.13476881668749396
+    },
+    {
+      "price": 173.46,
+      "unit_cost": 149.54,
+      "margin": 0.1378992274876053
+    },
+    {
+      "price": 82.92,
+      "unit_cost": 74.59,
+      "margin": 0.10045827303424985
+    }
+  ],
+  "D1": "Kraesmelpox Works is based in Peoria, IL. We compete on low prices and high volume. We are Kraesmelpox Works, a small Apparel E-commerce business. Here are our main products. Senvas jacket: price 195.47, unit cost 169.13. Lathkael jacket: price 325.93, unit cost 280.98. Lertas jacket: price 155.81, unit cost 140.15. Which product has the weakest margin, and what would you change first?",
+  "D1p": "Kraesmelpox Works is based in Peoria, IL. We compete on low prices and high volume. We are Kraesmelpox Works, a small Apparel E-commerce business. Here are our main products. Senvas jacket: price 195.47, unit cost 31.18. Lathkael jacket: price 20.95, unit cost 16.14. Lertas jacket: price 350.91, unit cost 499.10. Which product has the weakest margin, and what would you change first?",
+  "D2": "Kraesmelpox Works is based in Peoria, IL. We compete on low prices and high volume. We are Kraesmelpox Works, a small Apparel E-commerce business. Here are our main products. Senvas jacket: price 4,509.19, unit cost 4,416.86. Lathkael jacket: price 4,851.98, unit cost 4,749.76. Lertas jacket: price 4,365.44, unit cost 4,300.04. Which product has the weakest margin, and what would you change first?",
+  "D3o@1": "Kraesmelpox Works is based in Peoria, IL. We compete on low prices and high volume. We are Kraesmelpox Works, a small Apparel E-commerce business. Here are our main products. Senvas jacket: price 298.00, unit cost 81.00. Lathkael jacket: price 100.00, unit cost 100.00. Lertas jacket: price 101.00, unit cost 111.00. Which product has the weakest margin, and what would you change first?"
+}

@@ -1,0 +1,92 @@
+{
+ "result": {
+  "branches": {
+   "mapped->mapped": 138613,
+   "year->year": 6060,
+   "mapped->year": 11,
+   "special->special": 756
+  },
+  "digits": {
+   "1001/default/reuse|6": 2880,
+   "1001/default/fresh|6": 2880,
+   "1001/dirichlet0.1/reuse|6": 2880,
+   "1001/dirichlet0.1/fresh|6": 2880,
+   "1001/intervals16/reuse|6": 2880,
+   "1001/intervals16/fresh|6": 2880,
+   "1001/intervals256/reuse|6": 2880,
+   "1001/intervals256/fresh|6": 2880,
+   "3003/default/reuse|6": 2880,
+   "3003/default/fresh|6": 2880,
+   "single|6": 1500
+  },
+  "misread": [
+   {
+    "context": "1001/default/fresh",
+    "field": "min_order",
+    "true": 4100.0,
+    "shown": 2013.0
+   },
+   {
+    "context": "1001/default/fresh",
+    "field": "cost:1",
+    "true": 10.38,
+    "shown": 2020.0
+   },
+   {
+    "context": "1001/default/fresh",
+    "field": "price:0",
+    "true": 18.34,
+    "shown": 1990.0
+   },
+   {
+    "context": "1001/default/fresh",
+    "field": "price:1",
+    "true": 24.2,
+    "shown": 2032.0
+   },
+   {
+    "context": "1001/dirichlet0.1/fresh",
+    "field": "cost:2",
+    "true": 1116.68,
+    "shown": 2006.0
+   },
+   {
+    "context": "1001/dirichlet0.1/fresh",
+    "field": "order_qty",
+    "true": 650.0,
+    "shown": 1997.0
+   },
+   {
+    "context": "1001/intervals16/fresh",
+    "field": "price:0",
+    "true": 365.31,
+    "shown": 1984.0
+   },
+   {
+    "context": "1001/intervals256/fresh",
+    "field": "price:0",
+    "true": 127.85,
+    "shown": 2000.0
+   },
+   {
+    "context": "3003/default/fresh",
+    "field": "min_order",
+    "true": 4100.0,
+    "shown": 2013.0
+   },
+   {
+    "context": "3003/default/fresh",
+    "field": "cost:1",
+    "true": 1.21,
+    "shown": 1988.0
+   },
+   {
+    "context": "single",
+    "field": "cost:1",
+    "true": 179.3,
+    "shown": 2027.0
+   }
+  ],
+  "shown_values": 145440
+ }
+}

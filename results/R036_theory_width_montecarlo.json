@@ -1,0 +1,32 @@
+{
+  "run": "R036_theory_width_montecarlo",
+  "config": {
+    "a": 0.1,
+    "b": 10.0,
+    "draws_per_n": 20000,
+    "seed": 2026,
+    "generator": "paper/figures/gen_figA2_key_localization.py"
+  },
+  "result": {
+    "1": {
+      "theory": 4.605170185988092,
+      "monte_carlo": 4.605170185988093
+    },
+    "2": {
+      "theory": 3.0701134573253945,
+      "monte_carlo": 3.0643979224666844
+    },
+    "4": {
+      "theory": 1.8420680743952367,
+      "monte_carlo": 1.8479108404927072
+    },
+    "8": {
+      "theory": 1.023371152441798,
+      "monte_carlo": 1.0206138835412057
+    },
+    "16": {
+      "theory": 0.5417847277633049,
+      "monte_carlo": 0.5383949628693799
+    }
+  }
+}

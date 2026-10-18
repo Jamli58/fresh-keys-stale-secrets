@@ -1,0 +1,108 @@
+{
+  "run": "R045_d2_joint_single",
+  "config": {
+    "part": "single",
+    "frozen_solver": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75,
+      "n_samples": 4000
+    },
+    "n_nuisance": 400,
+    "obs_sd": 0.03,
+    "nuisance": "shared across queries (integrated once over the history)",
+    "modelled_fields": "prices and costs of all products shown (other products integrated over class priors)",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "total_seconds": 767.7510361671448
+  },
+  "result": {
+    "n_rows": 1500,
+    "n_multi_product_rows": 300,
+    "all": {
+      "A0_margin_hit_5pp": 0.284,
+      "pair_margin_hit_5pp": 0.2813333333333333,
+      "joint_margin_hit_5pp": 0.2886666666666667,
+      "joint_minus_pair_margin_hit_5pp": 0.007333333333333333,
+      "joint_minus_pair_margin_hit_5pp_ci": [
+        -0.0033333333333333335,
+        0.018
+      ],
+      "joint_minus_A0_margin_hit_5pp": 0.004666666666666667,
+      "joint_minus_A0_margin_hit_5pp_ci": [
+        -0.03933333333333333,
+        0.048666666666666664
+      ],
+      "pair_minus_A0_margin_hit_5pp": -0.0026666666666666666,
+      "pair_minus_A0_margin_hit_5pp_ci": [
+        -0.04933333333333333,
+        0.04334999999999976
+      ],
+      "A0_unit_cost_hit_10pct": 0.16,
+      "pair_unit_cost_hit_10pct": 0.16333333333333333,
+      "joint_unit_cost_hit_10pct": 0.17066666666666666,
+      "joint_minus_pair_unit_cost_hit_10pct": 0.007333333333333333,
+      "joint_minus_pair_unit_cost_hit_10pct_ci": [
+        -0.0033333333333333335,
+        0.018
+      ],
+      "joint_minus_A0_unit_cost_hit_10pct": 0.010666666666666666,
+      "joint_minus_A0_unit_cost_hit_10pct_ci": [
+        -0.024,
+        0.044
+      ],
+      "pair_minus_A0_unit_cost_hit_10pct": 0.0033333333333333335,
+      "pair_minus_A0_unit_cost_hit_10pct_ci": [
+        -0.03133333333333333,
+        0.036
+      ]
+    },
+    "margin_review": {
+      "A0_margin_hit_5pp": 0.28,
+      "pair_margin_hit_5pp": 0.29333333333333333,
+      "joint_margin_hit_5pp": 0.33,
+      "joint_minus_pair_margin_hit_5pp": 0.03666666666666667,
+      "joint_minus_pair_margin_hit_5pp_ci": [
+        -0.016666666666666666,
+        0.09
+      ],
+      "joint_minus_A0_margin_hit_5pp": 0.05,
+      "joint_minus_A0_margin_hit_5pp_ci": [
+        -0.013333333333333334,
+        0.11333333333333333
+      ],
+      "pair_minus_A0_margin_hit_5pp": 0.013333333333333334,
+      "pair_minus_A0_margin_hit_5pp_ci": [
+        -0.06666666666666667,
+        0.09333333333333334
+      ],
+      "A0_unit_cost_hit_10pct": 0.18,
+      "pair_unit_cost_hit_10pct": 0.21666666666666667,
+      "joint_unit_cost_hit_10pct": 0.25333333333333335,
+      "joint_minus_pair_unit_cost_hit_10pct": 0.03666666666666667,
+      "joint_minus_pair_unit_cost_hit_10pct_ci": [
+        -0.016666666666666666,
+        0.09
+      ],
+      "joint_minus_A0_unit_cost_hit_10pct": 0.07333333333333333,
+      "joint_minus_A0_unit_cost_hit_10pct_ci": [
+        0.006666666666666667,
+        0.14
+      ],
+      "pair_minus_A0_unit_cost_hit_10pct": 0.03666666666666667,
+      "pair_minus_A0_unit_cost_hit_10pct_ci": [
+        -0.02,
+        0.09333333333333334
+      ]
+    }
+  }
+}

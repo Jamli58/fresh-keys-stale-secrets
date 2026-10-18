@@ -1,0 +1,230 @@
+{
+  "run": "R038_d3o_support_only",
+  "config": {
+    "eval_config": {
+      "n_firms": 300,
+      "n_dev": 50,
+      "tasks_per_firm": 2,
+      "seed": 1001,
+      "prior_seed": 2002,
+      "cues": true
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "frozen_solver": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75,
+      "n_samples": 4000
+    },
+    "mechanism": "preempt/sanitizer.py encypt_money + M_epsilon, commit 1032978",
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "total_seconds": 165.61869096755981
+  },
+  "result": {
+    "D3o@eps=1e-06": {
+      "linked_queries": {
+        "1": {
+          "margin_hit_5pp": 0.18333333333333332,
+          "unit_cost_hit_10pct": 0.2833333333333333,
+          "margin_hit_5pp_ci": [
+            0.09444444444444444,
+            0.2833333333333333
+          ],
+          "unit_cost_hit_10pct_ci": [
+            0.17222222222222222,
+            0.39444444444444443
+          ]
+        },
+        "2": {
+          "margin_hit_5pp": 0.18888888888888888,
+          "unit_cost_hit_10pct": 0.3,
+          "margin_hit_5pp_ci": [
+            0.1,
+            0.28888888888888886
+          ],
+          "unit_cost_hit_10pct_ci": [
+            0.18333333333333332,
+            0.4166666666666667
+          ]
+        },
+        "4": {
+          "margin_hit_5pp": 0.18888888888888888,
+          "unit_cost_hit_10pct": 0.3,
+          "margin_hit_5pp_ci": [
+            0.1,
+            0.28888888888888886
+          ],
+          "unit_cost_hit_10pct_ci": [
+            0.18333333333333332,
+            0.4166666666666667
+          ]
+        },
+        "8": {
+          "margin_hit_5pp": 0.19444444444444445,
+          "unit_cost_hit_10pct": 0.3,
+          "margin_hit_5pp_ci": [
+            0.1,
+            0.3
+          ],
+          "unit_cost_hit_10pct_ci": [
+            0.18333333333333332,
+            0.4166666666666667
+          ]
+        },
+        "16": {
+          "margin_hit_5pp": 0.18888888888888888,
+          "unit_cost_hit_10pct": 0.3,
+          "margin_hit_5pp_ci": [
+            0.1,
+            0.28888888888888886
+          ],
+          "unit_cost_hit_10pct_ci": [
+            0.18333333333333332,
+            0.4166666666666667
+          ]
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": 0.005555555555555556,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          0.0,
+          0.016666666666666666
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": 0.016666666666666666,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          0.0,
+          0.03888888888888889
+        ]
+      },
+      "relative_price_noise_median_by_sector": {
+        "bakery_cafe": 78.20962199312714,
+        "machine_shop": 11.882197733974854,
+        "apparel_ecommerce": 21.71186440677966,
+        "it_consulting": 5.080771764495707,
+        "construction_sub": 2.209226615565995,
+        "specialty_retail": 14.105740181268882
+      },
+      "single_query_test": {
+        "A0_prior_only": {
+          "all": {
+            "n": 2100,
+            "margin_hit_2pp": 0.11714285714285715,
+            "margin_hit_5pp": 0.2814285714285714,
+            "margin_mae_pp": 13.261427946357125,
+            "unit_cost_hit_10pct": 0.16,
+            "unit_cost_median_rel_err": 0.33380706230747875,
+            "n_failed": 0,
+            "advantage_margin_hit_5pp": 0.0,
+            "advantage_margin_hit_5pp_ci": [
+              0.0,
+              0.0
+            ],
+            "advantage_unit_cost_hit_10pct": 0.0,
+            "advantage_unit_cost_hit_10pct_ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "typical": {
+            "n": 1602,
+            "margin_hit_2pp": 0.15355805243445692,
+            "margin_hit_5pp": 0.36891385767790263,
+            "margin_mae_pp": 8.317675299325245,
+            "unit_cost_hit_10pct": 0.20037453183520598,
+            "unit_cost_median_rel_err": 0.29082426127527217,
+            "n_failed": 0,
+            "advantage_margin_hit_5pp": 0.0,
+            "advantage_margin_hit_5pp_ci": [
+              0.0,
+              0.0
+            ],
+            "advantage_unit_cost_hit_10pct": 0.0,
+            "advantage_unit_cost_hit_10pct_ci": [
+              0.0,
+              0.0
+            ]
+          },
+          "atypical": {
+            "n": 498,
+            "margin_hit_2pp": 0.0,
+            "margin_hit_5pp": 0.0,
+            "margin_mae_pp": 29.164825015724734,
+            "unit_cost_hit_10pct": 0.030120481927710843,
+            "unit_cost_median_rel_err": 0.5392057551238221,
+            "n_failed": 0,
+            "advantage_margin_hit_5pp": 0.0,
+            "advantage_margin_hit_5pp_ci": [
+              0.0,
+              0.0
+            ],
+            "advantage_unit_cost_hit_10pct": 0.0,
+            "advantage_unit_cost_hit_10pct_ci": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "A1plus_bayes_oracle": {
+          "all": {
+            "n": 2100,
+            "margin_hit_2pp": 0.1,
+            "margin_hit_5pp": 0.26095238095238094,
+            "margin_mae_pp": 12.651271902571178,
+            "unit_cost_hit_10pct": 0.20761904761904762,
+            "unit_cost_median_rel_err": 0.25594964184302416,
+            "n_failed": 0,
+            "advantage_margin_hit_5pp": -0.020476190476190478,
+            "advantage_margin_hit_5pp_ci": [
+              -0.04629695956701686,
+              0.00433589024062373
+            ],
+            "advantage_unit_cost_hit_10pct": 0.047619047619047616,
+            "advantage_unit_cost_hit_10pct_ci": [
+              0.008968837200666322,
+              0.0861439364587369
+            ]
+          },
+          "typical": {
+            "n": 1602,
+            "margin_hit_2pp": 0.12921348314606743,
+            "margin_hit_5pp": 0.34019975031210986,
+            "margin_mae_pp": 8.307603557380148,
+            "unit_cost_hit_10pct": 0.2390761548064919,
+            "unit_cost_median_rel_err": 0.2170539659597193,
+            "n_failed": 0,
+            "advantage_margin_hit_5pp": -0.02871410736579276,
+            "advantage_margin_hit_5pp_ci": [
+              -0.062421972534332085,
+              0.003909400201612857
+            ],
+            "advantage_unit_cost_hit_10pct": 0.03870162297128589,
+            "advantage_unit_cost_hit_10pct_ci": [
+              -0.0069764340618759255,
+              0.08521303258145363
+            ]
+          },
+          "atypical": {
+            "n": 498,
+            "margin_hit_2pp": 0.006024096385542169,
+            "margin_hit_5pp": 0.006024096385542169,
+            "margin_mae_pp": 26.62427730216159,
+            "unit_cost_hit_10pct": 0.10642570281124498,
+            "unit_cost_median_rel_err": 0.5021649177475114,
+            "n_failed": 0,
+            "advantage_margin_hit_5pp": 0.006024096385542169,
+            "advantage_margin_hit_5pp_ci": [
+              0.0,
+              0.018755933544303712
+            ],
+            "advantage_unit_cost_hit_10pct": 0.07630522088353414,
+            "advantage_unit_cost_hit_10pct_ci": [
+              0.020078313253012067,
+              0.1375
+            ]
+          }
+        }
+      }
+    }
+  }
+}

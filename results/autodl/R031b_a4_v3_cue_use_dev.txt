@@ -1,0 +1,10 @@
+llama3.1-8b-instruct-bf16: matched 100 dev A4 answers
+city_price_index vs BEA RPP: Spearman 0.63 (p 3e-12); answers 5 distinct, range 86-120
+positioning_price_pct by true positioning: {'discount': (-10.3, 34), 'premium': (14.8, 30), 'standard': (0.0, 36)}
+margin_shift_pp distinct: [-5, 0, 5, 10]
+combined multiplier: 11 distinct, range 0.72-1.20
+qwen2.5-32b-instruct-awq: matched 100 dev A4 answers
+city_price_index vs BEA RPP: Spearman 0.53 (p 1e-08); answers 12 distinct, range 85-117
+positioning_price_pct by true positioning: {'discount': (-15.3, 34), 'premium': (20.0, 30), 'standard': (0.0, 36)}
+margin_shift_pp distinct: [-10, -5, 0, 5, 10]
+combined multiplier: 27 distinct, range 0.68-1.20

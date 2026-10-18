@@ -1,0 +1,455 @@
+{
+  "run": "R008",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "n_samples": 4000,
+    "n_boot": 10000,
+    "prior_draw_size": 2000,
+    "tuning_grid": {
+      "prior_df": [
+        null,
+        3.0
+      ],
+      "prior_scale": [
+        0.75,
+        1.0,
+        1.5
+      ]
+    },
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "frozen_attacker_config": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75
+    }
+  },
+  "result": {
+    "D0_none": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 1.0,
+        "margin_hit_5pp": 1.0,
+        "margin_mae_pp": 0.0,
+        "unit_cost_hit_10pct": 1.0,
+        "unit_cost_median_rel_err": 0.0,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.7185714285714285,
+        "advantage_margin_hit_5pp_ci": [
+          0.6719641792404392,
+          0.7639325018946258
+        ],
+        "advantage_unit_cost_hit_10pct": 0.84,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.8015145861601085,
+          0.8768126693329893
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 1.0,
+        "margin_hit_5pp": 1.0,
+        "margin_mae_pp": 0.0,
+        "unit_cost_hit_10pct": 1.0,
+        "unit_cost_median_rel_err": 0.0,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.6310861423220974,
+        "advantage_margin_hit_5pp_ci": [
+          0.5765119575609498,
+          0.6837149064171123
+        ],
+        "advantage_unit_cost_hit_10pct": 0.799625468164794,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.751879348557962,
+          0.8455598455598455
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 1.0,
+        "margin_hit_5pp": 1.0,
+        "margin_mae_pp": 0.0,
+        "unit_cost_hit_10pct": 1.0,
+        "unit_cost_median_rel_err": 0.0,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 1.0,
+        "advantage_margin_hit_5pp_ci": [
+          1.0,
+          1.0
+        ],
+        "advantage_unit_cost_hit_10pct": 0.9698795180722891,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.9294117647058824,
+          1.0
+        ]
+      }
+    },
+    "D1_shared_scaling": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 0.9995238095238095,
+        "margin_hit_5pp": 1.0,
+        "margin_mae_pp": 0.026447762816742895,
+        "unit_cost_hit_10pct": 0.11571428571428571,
+        "unit_cost_median_rel_err": 0.5872827226077586,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.7185714285714285,
+        "advantage_margin_hit_5pp_ci": [
+          0.6719641792404392,
+          0.7639325018946258
+        ],
+        "advantage_unit_cost_hit_10pct": -0.04428571428571428,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.08792337431867156,
+          -0.0027929081315952882
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 0.9993757802746567,
+        "margin_hit_5pp": 1.0,
+        "margin_mae_pp": 0.029778287466493223,
+        "unit_cost_hit_10pct": 0.13295880149812733,
+        "unit_cost_median_rel_err": 0.5434684819069363,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.6310861423220974,
+        "advantage_margin_hit_5pp_ci": [
+          0.5765119575609498,
+          0.6837149064171123
+        ],
+        "advantage_unit_cost_hit_10pct": -0.06741573033707865,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.12103946370255243,
+          -0.01504200483157352
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 1.0,
+        "margin_hit_5pp": 1.0,
+        "margin_mae_pp": 0.015733906413329193,
+        "unit_cost_hit_10pct": 0.060240963855421686,
+        "unit_cost_median_rel_err": 0.6990786333146845,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 1.0,
+        "advantage_margin_hit_5pp_ci": [
+          1.0,
+          1.0
+        ],
+        "advantage_unit_cost_hit_10pct": 0.030120481927710843,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.028455284552845527,
+          0.08847736625514403
+        ]
+      }
+    },
+    "D1p_per_field_scaling": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 0.09571428571428571,
+        "margin_hit_5pp": 0.2538095238095238,
+        "margin_mae_pp": 13.298736477716199,
+        "unit_cost_hit_10pct": 0.12142857142857143,
+        "unit_cost_median_rel_err": 0.4645807558894437,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": -0.02761904761904762,
+        "advantage_margin_hit_5pp_ci": [
+          -0.06816271076675794,
+          0.012785884412304842
+        ],
+        "advantage_unit_cost_hit_10pct": -0.03857142857142857,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.07780979827089338,
+          -0.0013926609408851762
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 0.12484394506866417,
+        "margin_hit_5pp": 0.3289637952559301,
+        "margin_mae_pp": 9.036705051145827,
+        "unit_cost_hit_10pct": 0.12983770287141075,
+        "unit_cost_median_rel_err": 0.4353498114534785,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": -0.039950062421972535,
+        "advantage_margin_hit_5pp_ci": [
+          -0.09217171717171717,
+          0.013836477987421384
+        ],
+        "advantage_unit_cost_hit_10pct": -0.07053682896379526,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.1188631709814246,
+          -0.02408077216967967
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 0.002008032128514056,
+        "margin_hit_5pp": 0.012048192771084338,
+        "margin_mae_pp": 27.00912672945462,
+        "unit_cost_hit_10pct": 0.09437751004016064,
+        "unit_cost_median_rel_err": 0.5649319843704772,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.012048192771084338,
+        "advantage_margin_hit_5pp_ci": [
+          0.0021929824561403508,
+          0.024096385542168676
+        ],
+        "advantage_unit_cost_hit_10pct": 0.0642570281124498,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.014056224899598393,
+          0.10714285714285714
+        ]
+      }
+    },
+    "D2_zhang_order_preserving": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 0.10428571428571429,
+        "margin_hit_5pp": 0.25285714285714284,
+        "margin_mae_pp": 12.541273485994404,
+        "unit_cost_hit_10pct": 0.049523809523809526,
+        "unit_cost_median_rel_err": 0.895559321995338,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": -0.02857142857142857,
+        "advantage_margin_hit_5pp_ci": [
+          -0.07339015151515152,
+          0.015670634920634904
+        ],
+        "advantage_unit_cost_hit_10pct": -0.11047619047619048,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.1504301163881634,
+          -0.07228169644873322
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 0.13046192259675407,
+        "margin_hit_5pp": 0.31335830212234705,
+        "margin_mae_pp": 10.190090502657105,
+        "unit_cost_hit_10pct": 0.04931335830212235,
+        "unit_cost_median_rel_err": 0.9011282998830846,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": -0.05555555555555555,
+        "advantage_margin_hit_5pp_ci": [
+          -0.11316170531108295,
+          0.0012871259964283201
+        ],
+        "advantage_unit_cost_hit_10pct": -0.15106117353308365,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.20025601353720032,
+          -0.10424704399423501
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 0.020080321285140562,
+        "margin_hit_5pp": 0.05823293172690763,
+        "margin_mae_pp": 20.10471754082645,
+        "unit_cost_hit_10pct": 0.050200803212851405,
+        "unit_cost_median_rel_err": 0.8832707951157137,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.05823293172690763,
+        "advantage_margin_hit_5pp_ci": [
+          0.032520325203252036,
+          0.08750267094017089
+        ],
+        "advantage_unit_cost_hit_10pct": 0.020080321285140562,
+        "advantage_unit_cost_hit_10pct_ci": [
+          -0.02610441767068273,
+          0.05813953488372093
+        ]
+      }
+    },
+    "D3_prempt_metric_dp@eps=0.5": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 0.2423809523809524,
+        "margin_hit_5pp": 0.4561904761904762,
+        "margin_mae_pp": 9.758537151409694,
+        "unit_cost_hit_10pct": 0.430952380952381,
+        "unit_cost_median_rel_err": 0.15057480602729012,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.17476190476190476,
+        "advantage_margin_hit_5pp_ci": [
+          0.1197314634936053,
+          0.22992168674698793
+        ],
+        "advantage_unit_cost_hit_10pct": 0.27095238095238094,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.20775590571777586,
+          0.3314232501023332
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 0.2615480649188514,
+        "margin_hit_5pp": 0.5049937578027466,
+        "margin_mae_pp": 7.0803635853759435,
+        "unit_cost_hit_10pct": 0.44756554307116103,
+        "unit_cost_median_rel_err": 0.1332043104281583,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.13607990012484394,
+        "advantage_margin_hit_5pp_ci": [
+          0.07170507010943913,
+          0.19864747847478476
+        ],
+        "advantage_unit_cost_hit_10pct": 0.24719101123595505,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.17343049529396395,
+          0.3208493688991123
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 0.18072289156626506,
+        "margin_hit_5pp": 0.2991967871485944,
+        "margin_mae_pp": 18.373866574674896,
+        "unit_cost_hit_10pct": 0.37751004016064255,
+        "unit_cost_median_rel_err": 0.20246922930736416,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.2991967871485944,
+        "advantage_margin_hit_5pp_ci": [
+          0.20781893004115226,
+          0.40040650406504064
+        ],
+        "advantage_unit_cost_hit_10pct": 0.3473895582329317,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.24897119341563786,
+          0.452991452991453
+        ]
+      }
+    },
+    "D3_prempt_metric_dp@eps=1.0": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 0.31142857142857144,
+        "margin_hit_5pp": 0.5323809523809524,
+        "margin_mae_pp": 8.181780168919929,
+        "unit_cost_hit_10pct": 0.5242857142857142,
+        "unit_cost_median_rel_err": 0.08698907717450528,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.2509523809523809,
+        "advantage_margin_hit_5pp_ci": [
+          0.1961042718855219,
+          0.306497581011754
+        ],
+        "advantage_unit_cost_hit_10pct": 0.36428571428571427,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.30235738213089347,
+          0.4255024570059284
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 0.32147315855181025,
+        "margin_hit_5pp": 0.5724094881398252,
+        "margin_mae_pp": 6.2348870680451105,
+        "unit_cost_hit_10pct": 0.5411985018726592,
+        "unit_cost_median_rel_err": 0.07959668276518798,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.2034956304619226,
+        "advantage_margin_hit_5pp_ci": [
+          0.14087940077513983,
+          0.26578363470471134
+        ],
+        "advantage_unit_cost_hit_10pct": 0.3408239700374532,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.2688961323818052,
+          0.4123134328358209
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 0.2791164658634538,
+        "margin_hit_5pp": 0.4036144578313253,
+        "margin_mae_pp": 14.444677252456993,
+        "unit_cost_hit_10pct": 0.46987951807228917,
+        "unit_cost_median_rel_err": 0.11539965528645643,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.4036144578313253,
+        "advantage_margin_hit_5pp_ci": [
+          0.30196078431372547,
+          0.5138930722891565
+        ],
+        "advantage_unit_cost_hit_10pct": 0.4397590361445783,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.33139477884176927,
+          0.5568639406982305
+        ]
+      }
+    },
+    "D3_prempt_metric_dp@eps=2.0": {
+      "all": {
+        "n": 2100,
+        "margin_hit_2pp": 0.40523809523809523,
+        "margin_hit_5pp": 0.6080952380952381,
+        "margin_mae_pp": 6.5189519702691054,
+        "unit_cost_hit_10pct": 0.621904761904762,
+        "unit_cost_median_rel_err": 0.050654815531302494,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.32666666666666666,
+        "advantage_margin_hit_5pp_ci": [
+          0.27192735359525577,
+          0.3810242037055451
+        ],
+        "advantage_unit_cost_hit_10pct": 0.46190476190476193,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.40244986631016044,
+          0.5198342776203966
+        ]
+      },
+      "typical": {
+        "n": 1602,
+        "margin_hit_2pp": 0.4188514357053683,
+        "margin_hit_5pp": 0.6335830212234707,
+        "margin_mae_pp": 5.321305510496554,
+        "unit_cost_hit_10pct": 0.634207240948814,
+        "unit_cost_median_rel_err": 0.046242700957751806,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.264669163545568,
+        "advantage_margin_hit_5pp_ci": [
+          0.20350206437478935,
+          0.32576040253279054
+        ],
+        "advantage_unit_cost_hit_10pct": 0.433832709113608,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.3648148148148148,
+          0.5026256127450979
+        ]
+      },
+      "atypical": {
+        "n": 498,
+        "margin_hit_2pp": 0.3614457831325301,
+        "margin_hit_5pp": 0.5261044176706827,
+        "margin_mae_pp": 10.3716219071278,
+        "unit_cost_hit_10pct": 0.5823293172690763,
+        "unit_cost_median_rel_err": 0.0653832229996685,
+        "n_failed": 0,
+        "advantage_margin_hit_5pp": 0.5261044176706827,
+        "advantage_margin_hit_5pp_ci": [
+          0.4235217008151576,
+          0.6345381526104418
+        ],
+        "advantage_unit_cost_hit_10pct": 0.5522088353413654,
+        "advantage_unit_cost_hit_10pct_ci": [
+          0.44374932359307356,
+          0.6626016260162602
+        ]
+      }
+    }
+  }
+}

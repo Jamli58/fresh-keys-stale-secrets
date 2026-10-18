@@ -1,0 +1,108 @@
+{
+  "run": "R001",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "finqa_sample": 1108,
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "prior_draw_size": 2000,
+    "extreme_share": 0.2,
+    "d1_k_range": [
+      0.1,
+      10.0
+    ],
+    "d2_target_range": [
+      1.0,
+      1000000.0
+    ],
+    "d2_n_intervals": 64,
+    "d3_domain": {
+      "money": [
+        0.0,
+        50000.0
+      ],
+      "count": [
+        0.0,
+        20000.0
+      ],
+      "percent": [
+        0.0,
+        100.0
+      ]
+    },
+    "display_sig_digits": 6,
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "generator_extreme_efficiency_range": [
+      1.2,
+      2.0
+    ]
+  },
+  "result": {
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "n_firms": 300,
+    "firms_per_sector": {
+      "bakery_cafe": 50,
+      "machine_shop": 50,
+      "apparel_ecommerce": 50,
+      "it_consulting": 50,
+      "construction_sub": 50,
+      "specialty_retail": 50
+    },
+    "margin_median_generated_vs_spec": {
+      "bakery_cafe": {
+        "generated": 0.5719867748722572,
+        "spec": 0.58
+      },
+      "machine_shop": {
+        "generated": 0.3581456251139509,
+        "spec": 0.36
+      },
+      "apparel_ecommerce": {
+        "generated": 0.45714050674564005,
+        "spec": 0.45
+      },
+      "it_consulting": {
+        "generated": 0.24663372109164602,
+        "spec": 0.24
+      },
+      "construction_sub": {
+        "generated": 0.33030888030888034,
+        "spec": 0.34
+      },
+      "specialty_retail": {
+        "generated": 0.4039800995024876,
+        "spec": 0.385
+      }
+    },
+    "atypical_share": 0.22666666666666666,
+    "atypical_share_within_20pct_pm3pp": true,
+    "latent_extreme_share": 0.22333333333333333,
+    "cues": {
+      "corr_log_city_rpp_vs_log_price_residual": 0.2563459623836162,
+      "positioning_share": {
+        "discount": 0.32,
+        "standard": 0.37333333333333335,
+        "premium": 0.30666666666666664
+      },
+      "mean_log_price_residual_by_positioning": {
+        "discount": -0.1597627205570496,
+        "standard": 0.04156407903784427,
+        "premium": 0.021474631508458186
+      },
+      "n_distinct_cities": 60
+    }
+  }
+}

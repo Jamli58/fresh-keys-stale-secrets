@@ -1,0 +1,6 @@
+key=qwen32b served=qwen2.5-32b-instruct-awq model_dir=/root/autodl-tmp/models/qwen32b args=--max-model-len 8192 --max-num-seqs 64
+VLLM_USE_FLASHINFER_SAMPLER=0
+vllm 0.30.0 torch 2.13.0+cu130 cuda 13.0
+name, memory.total [MiB], driver_version
+NVIDIA RTX 6000D, 85651 MiB, 595.71.05
+{"object":"list","data":[{"id":"qwen2.5-32b-instruct-awq","object":"model","created":1790939160,"owned_by":"vllm","root":"/root/autodl-tmp/models/qwen32b","parent":null,"max_model_len":8192,"permission":[{"id":"modelperm-88b5f4a6521caf84","object":"model_permission","created":1790939160,"allow_create_engine":false,"allow_sampling":true,"allow_logprobs":true,"allow_search_indices":false,"allow_view":true,"allow_fine_tuning":false,"organization":"*","group":null,"is_blocking":false}]}]}

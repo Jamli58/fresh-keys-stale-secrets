@@ -1,0 +1,55 @@
+{
+  "run": "R010",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "n_samples": 4000,
+    "n_boot": 10000,
+    "prior_draw_size": 2000,
+    "tuning_grid": {
+      "prior_df": [
+        null,
+        3.0
+      ],
+      "prior_scale": [
+        0.75,
+        1.0,
+        1.5
+      ]
+    },
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "frozen_attacker_config": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75
+    }
+  },
+  "result": {
+    "checks": {
+      "D1_shared_scaling": {
+        "margin_ci_low": 0.6719641792404392,
+        "cost_ci_low": 0.07149452110389612,
+        "passes": true
+      },
+      "D2_zhang_order_preserving": {
+        "margin_ci_low": -0.027131782945736434,
+        "cost_ci_low": -0.03017353309888964,
+        "passes": false
+      }
+    },
+    "pass": false
+  }
+}

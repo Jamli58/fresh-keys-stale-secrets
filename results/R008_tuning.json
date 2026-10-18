@@ -1,0 +1,74 @@
+{
+  "run": "R008_tuning",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "n_samples": 4000,
+    "n_boot": 10000,
+    "prior_draw_size": 2000,
+    "tuning_grid": {
+      "prior_df": [
+        null,
+        3.0
+      ],
+      "prior_scale": [
+        0.75,
+        1.0,
+        1.5
+      ]
+    },
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions"
+  },
+  "result": {
+    "grid": [
+      {
+        "prior_df": null,
+        "prior_scale": 0.75,
+        "dev_objective": 0.43452380952380953
+      },
+      {
+        "prior_df": null,
+        "prior_scale": 1.0,
+        "dev_objective": 0.4363095238095238
+      },
+      {
+        "prior_df": null,
+        "prior_scale": 1.5,
+        "dev_objective": 0.43452380952380953
+      },
+      {
+        "prior_df": 3.0,
+        "prior_scale": 0.75,
+        "dev_objective": 0.4523809523809524
+      },
+      {
+        "prior_df": 3.0,
+        "prior_scale": 1.0,
+        "dev_objective": 0.4485119047619048
+      },
+      {
+        "prior_df": 3.0,
+        "prior_scale": 1.5,
+        "dev_objective": 0.44107142857142856
+      }
+    ],
+    "frozen": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75
+    }
+  }
+}

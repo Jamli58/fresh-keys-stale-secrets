@@ -1,0 +1,66 @@
+{
+  "model_id": "LLM-Research/Meta-Llama-3.1-8B-Instruct",
+  "revision": "master",
+  "local_dir": "/root/autodl-tmp/models/llama8b",
+  "verified_at": "2026-10-02T16:23:37+0800",
+  "ok": true,
+  "checked": {
+    "config.json": {
+      "sha256": "29e4c210b0d6ac178b16b2a255a568bdb23b581e50ca1ef6a6d071dd85704e6e",
+      "size": 855,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "configuration.json": {
+      "sha256": "a78221ae93dd8977b26fcd1d106fa5ad7e7f1fd3a7d93bfd9d6fba5ed00ec4d2",
+      "size": 48,
+      "revision": "ee7565b21b3ac64f3b8fae80081cfde648f95db9"
+    },
+    "generation_config.json": {
+      "sha256": "189fb0c0d7fd8a527db217c0a60a0e013f0394cd8800f9697a666a9e75e5f7fd",
+      "size": 184,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "model-00001-of-00004.safetensors": {
+      "sha256": "2b1879f356aed350030bb40eb45ad362c89d9891096f79a3ab323d3ba5607668",
+      "size": 4976698672,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "model-00002-of-00004.safetensors": {
+      "sha256": "09d433f650646834a83c580877bd60c6d1f88f7755305c12576b5c7058f9af15",
+      "size": 4999802720,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "model-00003-of-00004.safetensors": {
+      "sha256": "fc1cdddd6bfa91128d6e94ee73d0ce62bfcdb7af29e978ddcab30c66ae9ea7fa",
+      "size": 4915916176,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "model-00004-of-00004.safetensors": {
+      "sha256": "92ecfe1a2414458b4821ac8c13cf8cb70aed66b5eea8dc5ad9eeb4ff309d6d7b",
+      "size": 1168138808,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "model.safetensors.index.json": {
+      "sha256": "146776fce3f6db1103aa6f249e65ee5544c5923ce6f971b092eee79aa6e5d37b",
+      "size": 23950,
+      "revision": "043efdca396f2b6f4b5714d76d70df7840856ed7"
+    },
+    "special_tokens_map.json": {
+      "sha256": "6f38c73729248f6c127296386e3cdde96e254636cc58b4169d3fd32328d9a8ec",
+      "size": 296,
+      "revision": "86283db58aba4be4ffa058c48e36fa3eb53e3dfd"
+    },
+    "tokenizer.json": {
+      "sha256": "79e3e522635f3171300913bb421464a87de6222182a0570b9b2ccba2a964b2b4",
+      "size": 9085657,
+      "revision": "86283db58aba4be4ffa058c48e36fa3eb53e3dfd"
+    },
+    "tokenizer_config.json": {
+      "sha256": "177c7b61e616fecb84c17ce0591acb92c6c4d60e9ac5ababfb940ff23bbcd424",
+      "size": 55351,
+      "revision": "d02f94ee4a1a317d00309c1a9019f89428034720"
+    }
+  },
+  "mismatched": [],
+  "missing": []
+}

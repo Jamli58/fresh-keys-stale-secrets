@@ -1,0 +1,73 @@
+{
+  "run": "R046_d2_exact_v3",
+  "config": {
+    "part": "v3",
+    "exact": {
+      "n_particles": 20000,
+      "n_initial": 400000,
+      "mcmc_steps": 40,
+      "seed": 4646
+    },
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "n_firms": 60,
+    "fresh_arm": "joint shared-map attacker (R045 settings), Amendment 1",
+    "plan": "refine-logs/EXPERIMENT_PLAN_20261009_exact_joint.md",
+    "total_seconds": 3632.352623939514
+  },
+  "result": {
+    "1": {
+      "margin_hit_5pp": {
+        "seed4646": 0.24444444444444444,
+        "seed4647": 0.26666666666666666,
+        "abs_diff_pp": 2.2222222222222228
+      },
+      "unit_cost_hit_10pct": {
+        "seed4646": 0.2111111111111111,
+        "seed4647": 0.21666666666666667,
+        "abs_diff_pp": 0.5555555555555564
+      }
+    },
+    "16": {
+      "margin_hit_5pp": {
+        "seed4646": 0.3,
+        "seed4647": 0.3,
+        "abs_diff_pp": 0.0
+      },
+      "unit_cost_hit_10pct": {
+        "seed4646": 0.21666666666666667,
+        "seed4647": 0.2222222222222222,
+        "abs_diff_pp": 0.5555555555555536
+      }
+    },
+    "pass": false,
+    "diagnostics": {
+      "4646": {
+        "min_ess_quantiles": [
+          3.35652604892255,
+          12.058149744780902,
+          144.79002294510195
+        ],
+        "seconds_mean": 106.66266932619942
+      },
+      "4647": {
+        "min_ess_quantiles": [
+          1.483918848575161,
+          12.007527738715064,
+          143.23143183670484
+        ],
+        "seconds_mean": 53.08493373857604
+      }
+    }
+  }
+}

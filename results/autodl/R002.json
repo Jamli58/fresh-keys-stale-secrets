@@ -1,0 +1,71 @@
+{
+  "run": "R002",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "finqa_sample": 1108,
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "prior_draw_size": 2000,
+    "extreme_share": 0.2,
+    "d1_k_range": [
+      0.1,
+      10.0
+    ],
+    "d2_target_range": [
+      1.0,
+      1000000.0
+    ],
+    "d2_n_intervals": 64,
+    "d3_domain": {
+      "money": [
+        0.0,
+        50000.0
+      ],
+      "count": [
+        0.0,
+        20000.0
+      ],
+      "percent": [
+        0.0,
+        100.0
+      ]
+    },
+    "display_sig_digits": 6,
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "generator_extreme_efficiency_range": [
+      1.2,
+      2.0
+    ]
+  },
+  "result": {
+    "D1_shared_scaling": {
+      "money_inverted_exact_to_cent_rate": 0.6913398692810457,
+      "money_inverted_rel_err_median": 1.3873324628542869e-05,
+      "money_inverted_rel_err_p99": 0.008293030877492304,
+      "rendered_margin_abs_err_median": 1.8329626164076407e-05,
+      "rendered_margin_abs_err_p99": 0.005369445526226268,
+      "n_money_values": 6120
+    },
+    "D1p_per_field_scaling": {
+      "money_inverted_exact_to_cent_rate": 0.6965686274509804,
+      "money_inverted_rel_err_median": 1.4069566983335521e-05,
+      "money_inverted_rel_err_p99": 0.00856113576801157,
+      "rendered_margin_abs_err_median": 0.5491898169521467,
+      "rendered_margin_abs_err_p99": 32.80319960338389,
+      "n_money_values": 6120
+    }
+  }
+}

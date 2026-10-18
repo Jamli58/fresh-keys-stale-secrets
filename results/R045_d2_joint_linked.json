@@ -1,0 +1,220 @@
+{
+  "run": "R045_d2_joint_linked",
+  "config": {
+    "part": "linked",
+    "frozen_solver": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75,
+      "n_samples": 4000
+    },
+    "n_nuisance": 400,
+    "obs_sd": 0.03,
+    "nuisance": "shared across queries (integrated once over the history)",
+    "modelled_fields": "prices and costs of all products shown (other products integrated over class priors)",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      2,
+      4,
+      8,
+      16
+    ],
+    "total_seconds": 10129.23946428299
+  },
+  "result": {
+    "D2/fresh": {
+      "1": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.2388888888888889,
+        "margin_hit_5pp_ci": [
+          0.16111111111111112,
+          0.32222222222222224
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.2222222222222222,
+        "unit_cost_hit_10pct_ci": [
+          0.1388888888888889,
+          0.31666666666666665
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "2": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.2833333333333333,
+        "margin_hit_5pp_ci": [
+          0.20555555555555555,
+          0.36666666666666664
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.2222222222222222,
+        "unit_cost_hit_10pct_ci": [
+          0.1388888888888889,
+          0.3111111111111111
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "4": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.4,
+        "margin_hit_5pp_ci": [
+          0.31666666666666665,
+          0.48333333333333334
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.25555555555555554,
+        "unit_cost_hit_10pct_ci": [
+          0.17222222222222222,
+          0.3388888888888889
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "8": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.4777777777777778,
+        "margin_hit_5pp_ci": [
+          0.39444444444444443,
+          0.5611111111111111
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.3388888888888889,
+        "unit_cost_hit_10pct_ci": [
+          0.24444444444444444,
+          0.4388888888888889
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "16": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.5388888888888889,
+        "margin_hit_5pp_ci": [
+          0.45555555555555555,
+          0.6222222222222222
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.39444444444444443,
+        "unit_cost_hit_10pct_ci": [
+          0.3111111111111111,
+          0.48333333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.3,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.18888888888888888,
+        0.40555555555555556
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.17222222222222222,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.06111111111111111,
+        0.2833333333333333
+      ]
+    },
+    "D2/reuse": {
+      "1": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.2388888888888889,
+        "margin_hit_5pp_ci": [
+          0.16111111111111112,
+          0.32222222222222224
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.2222222222222222,
+        "unit_cost_hit_10pct_ci": [
+          0.1388888888888889,
+          0.31666666666666665
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "2": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.22777777777777777,
+        "margin_hit_5pp_ci": [
+          0.15,
+          0.3111111111111111
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.25,
+        "unit_cost_hit_10pct_ci": [
+          0.16111111111111112,
+          0.34444444444444444
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "4": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.2388888888888889,
+        "margin_hit_5pp_ci": [
+          0.15,
+          0.3333333333333333
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.25555555555555554,
+        "unit_cost_hit_10pct_ci": [
+          0.16111111111111112,
+          0.35555555555555557
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "8": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.24444444444444444,
+        "margin_hit_5pp_ci": [
+          0.16111111111111112,
+          0.3388888888888889
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.21666666666666667,
+        "unit_cost_hit_10pct_ci": [
+          0.13333333333333333,
+          0.3055555555555556
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "16": {
+        "n_rows": 180,
+        "margin_hit_5pp": 0.24444444444444444,
+        "margin_hit_5pp_ci": [
+          0.16111111111111112,
+          0.3388888888888889
+        ],
+        "a0_margin_hit_5pp": 0.2,
+        "unit_cost_hit_10pct": 0.21666666666666667,
+        "unit_cost_hit_10pct_ci": [
+          0.13333333333333333,
+          0.3055555555555556
+        ],
+        "a0_unit_cost_hit_10pct": 0.15
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.005555555555555556,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        -0.044444444444444446,
+        0.06111111111111111
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": -0.005555555555555556,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        -0.10555555555555556,
+        0.08888888888888889
+      ]
+    },
+    "fresh_minus_reuse": {
+      "margin_hit_5pp": {
+        "contrast": 0.29444444444444445,
+        "contrast_ci": [
+          0.18333333333333332,
+          0.40555555555555556
+        ]
+      },
+      "unit_cost_hit_10pct": {
+        "contrast": 0.17777777777777778,
+        "contrast_ci": [
+          0.07777777777777778,
+          0.2777777777777778
+        ]
+      }
+    }
+  }
+}

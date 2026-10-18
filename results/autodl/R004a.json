@@ -1,0 +1,82 @@
+{
+  "run": "R004a",
+  "config": {
+    "n_firms": 300,
+    "n_dev": 50,
+    "tasks_per_firm": 2,
+    "seed": 1001,
+    "prior_seed": 2002,
+    "cues": true,
+    "defense_seeds": [
+      0,
+      1,
+      2
+    ],
+    "finqa_sample": 1108,
+    "epsilons": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "prior_draw_size": 2000,
+    "extreme_share": 0.2,
+    "d1_k_range": [
+      0.1,
+      10.0
+    ],
+    "d2_target_range": [
+      1.0,
+      1000000.0
+    ],
+    "d2_n_intervals": 64,
+    "d3_domain": {
+      "money": [
+        0.0,
+        50000.0
+      ],
+      "count": [
+        0.0,
+        20000.0
+      ],
+      "percent": [
+        0.0,
+        100.0
+      ]
+    },
+    "display_sig_digits": 6,
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "generator_extreme_efficiency_range": [
+      1.2,
+      2.0
+    ]
+  },
+  "result": {
+    "median_relative_price_error_by_sector": {
+      "eps=0.5": {
+        "bakery_cafe": 1.0466671851909464,
+        "machine_shop": 0.0651294069285069,
+        "apparel_ecommerce": 0.2459266234219153,
+        "it_consulting": 0.01895492450100831,
+        "construction_sub": 0.012948794451881985,
+        "specialty_retail": 0.1839230883822248
+      },
+      "eps=1.0": {
+        "bakery_cafe": 0.6486440996507656,
+        "machine_shop": 0.032569245780471295,
+        "apparel_ecommerce": 0.14272712362454443,
+        "it_consulting": 0.009477462250504123,
+        "construction_sub": 0.006522514874599388,
+        "specialty_retail": 0.09957815486335837
+      },
+      "eps=2.0": {
+        "bakery_cafe": 0.4305095658572481,
+        "machine_shop": 0.016284622890235596,
+        "apparel_ecommerce": 0.07250932953239925,
+        "it_consulting": 0.00473599376910013,
+        "construction_sub": 0.0032600649793577646,
+        "specialty_retail": 0.05368858016947119
+      }
+    },
+    "note": "ConvFinQA utility trend needs an LLM (BLOCKED)."
+  }
+}
