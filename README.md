@@ -19,7 +19,7 @@ The central finding: per-prompt evaluation understates leakage. With fresh secre
 | `tests/` | unit tests, including every implementation check cited in the paper |
 | `scripts/` | experiment scripts; each writes one result file to `results/` |
 | `results/` | all result files used in the paper; language-model runs in `results/autodl/` |
-| `figures/` | scripts for the paper's figures and the numerical-validation table |
+| `figures/` | scripts for the paper's figures and tables |
 | `cloud/` | scripts that serve the two language models with vLLM on a rented GPU (notes in Chinese) |
 | `plans/` | prespecified experiment plans, committed before the runs they govern |
 | `data/README.md` | sources of the third-party raw data (not redistributed) |
@@ -48,6 +48,8 @@ uv run python scripts/run_d3o.py                                 # released Prε
 uv run python scripts/run_d2_joint.py --part linked              # joint shared-map attacker on D2
 uv run python scripts/run_d2_exact.py --part linked --workers 8  # particle attacker A-exact (hours)
 uv run python scripts/run_population_shift.py                    # population shifts
+uv run python scripts/run_r049.py --part mismatch                # prior from another population model
+uv run python scripts/holm_check.py                              # Holm correction of the linked-query claim
 ```
 
 Each script's docstring lists its parts and options. The A-exact runs take about one to two minutes per 16-query sequence on an Apple M4 with eight worker processes.
@@ -59,7 +61,7 @@ cd figures
 uv run --with matplotlib python gen_fig1_hero_panel.py
 ```
 
-The other `gen_*.py` scripts work the same way. They read `results/` and write PDFs into `figures/`.
+The other `gen_fig*.py` scripts work the same way. They read `results/` and write PDFs into `figures/`, named after their place in the paper (`fig1_intro_threat_model.pdf` … `fig7_supp_perturbation.pdf`). The Fig. 1 script also needs `--with pillow`, `rsvg-convert` and Ghostscript. The `gen_table*.py` scripts write `TABLE_*.tex` into `figures/` or print the LaTeX rows; `EVIDENCE.md` names the table each one produces.
 
 **Language-model study.** The test run used Llama-3.1-8B-Instruct and Qwen2.5-32B-Instruct (AWQ), served with vLLM; `cloud/README.md` describes the setup. The recorded answers are in `results/autodl/` (row-level outputs and the request cache `llm_cache/`), so the hybrid attacker can be replayed without any model calls:
 

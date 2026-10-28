@@ -44,4 +44,4 @@ handles += [Line2D([], [], color="#4a4944", ls="-", lw=1.4, label="fresh secret 
             Line2D([], [], color=FLOOR_COLOR, ls=":", lw=1.0, label="prior-only baseline (A0)")]
 fig.legend(handles=handles, loc="lower center", ncol=4, frameon=False, bbox_to_anchor=(0.5, -0.17))
 fig.tight_layout(w_pad=2.0)
-save(fig, "fig2_linked_queries")
+save(fig, "fig4_linked_queries_recovery")

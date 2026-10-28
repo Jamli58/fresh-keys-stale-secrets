@@ -5,7 +5,7 @@
     "b": 10.0,
     "draws_per_n": 20000,
     "seed": 2026,
-    "generator": "paper/figures/gen_figA2_key_localization.py"
+    "generator": "figures/gen_figA2_key_localization.py"
   },
   "result": {
     "1": {

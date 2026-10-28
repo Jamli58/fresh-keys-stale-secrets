@@ -6,3 +6,4 @@ __pycache__/
 data/raw/
 figures/*.pdf
 figures/*.tex
+figures/*.svg

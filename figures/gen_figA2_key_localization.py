@@ -39,4 +39,4 @@ for ax in (ax1, ax2):
     ax.set_ylim(bottom=0)
     ax.legend(frameon=False, fontsize=6.5)
 fig.tight_layout(h_pad=1.2)
-save(fig, "figA2_key_localization")
+save(fig, "fig5_theory_key_localization")

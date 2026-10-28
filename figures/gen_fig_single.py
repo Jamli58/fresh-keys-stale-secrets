@@ -37,4 +37,4 @@ for ax, (metric, title) in zip(axes, PANELS):
 axes[0].set_yticks(ys, [label for label, _, _ in ROWS])
 axes[0].tick_params(axis="y", length=0)
 fig.subplots_adjust(wspace=0.1)
-save(fig, "fig_single")
+save(fig, "fig3_single_prompt_advantage")

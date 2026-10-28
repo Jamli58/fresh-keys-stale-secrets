@@ -1,0 +1,545 @@
+{
+  "run": "R017_R019_B2",
+  "config": {
+    "eval_config": {
+      "n_firms": 300,
+      "n_dev": 50,
+      "tasks_per_firm": 2,
+      "seed": 1001,
+      "prior_seed": 2002,
+      "cues": true
+    },
+    "n_firms": 250,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      16
+    ],
+    "frozen_solver": {
+      "prior_df": 3.0,
+      "prior_scale": 0.75,
+      "n_samples": 4000
+    },
+    "target": "product 0 (shown in every query)",
+    "sector_parameters": "margins: IRS SOI corporations TY2022 Table 1 (5 sectors), Damodaran Computer Services Jan 2026 (IT); prices, volumes, overhead and the firm-level model: documented assumptions",
+    "total_seconds": 1206.328633069992
+  },
+  "result": {
+    "D1/fresh": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 1.0,
+        "margin_hit_5pp_ci": [
+          1.0,
+          1.0
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.288,
+        "unit_cost_hit_10pct_ci": [
+          0.23733333333333334,
+          0.34
+        ],
+        "a0_unit_cost_hit_10pct": 0.16,
+        "key_median_abs_log_error": 0.205636907968787,
+        "key_within_5pct": 0.116
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 1.0,
+        "margin_hit_5pp_ci": [
+          1.0,
+          1.0
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.624,
+        "unit_cost_hit_10pct_ci": [
+          0.5826666666666667,
+          0.664
+        ],
+        "a0_unit_cost_hit_10pct": 0.16,
+        "key_median_abs_log_error": 0.07047626769954135,
+        "key_within_5pct": 0.38
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.0,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.0,
+        0.0
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.336,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.2773333333333333,
+        0.3933333333333333
+      ]
+    },
+    "D1/reuse": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 1.0,
+        "margin_hit_5pp_ci": [
+          1.0,
+          1.0
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.288,
+        "unit_cost_hit_10pct_ci": [
+          0.23733333333333334,
+          0.34
+        ],
+        "a0_unit_cost_hit_10pct": 0.16,
+        "key_median_abs_log_error": 0.205636907968787,
+        "key_within_5pct": 0.116
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 1.0,
+        "margin_hit_5pp_ci": [
+          1.0,
+          1.0
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.30533333333333335,
+        "unit_cost_hit_10pct_ci": [
+          0.252,
+          0.3586666666666667
+        ],
+        "a0_unit_cost_hit_10pct": 0.16,
+        "key_median_abs_log_error": 0.17815180299211614,
+        "key_within_5pct": 0.13466666666666666
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.0,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.0,
+        0.0
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.017333333333333333,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        -0.04,
+        0.07466666666666667
+      ]
+    },
+    "D1p/fresh": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2693333333333333,
+        "margin_hit_5pp_ci": [
+          0.21866666666666668,
+          0.32
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.18266666666666667,
+        "unit_cost_hit_10pct_ci": [
+          0.14533333333333334,
+          0.22133333333333333
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.4533333333333333,
+        "margin_hit_5pp_ci": [
+          0.4106666666666667,
+          0.49466666666666664
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.6133333333333333,
+        "unit_cost_hit_10pct_ci": [
+          0.5773333333333334,
+          0.6493333333333333
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.184,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.13733333333333334,
+        0.23066666666666666
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.43066666666666664,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.384,
+        0.4786666666666667
+      ]
+    },
+    "D1p/reuse": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2693333333333333,
+        "margin_hit_5pp_ci": [
+          0.21866666666666668,
+          0.32
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.18266666666666667,
+        "unit_cost_hit_10pct_ci": [
+          0.14533333333333334,
+          0.22133333333333333
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2693333333333333,
+        "margin_hit_5pp_ci": [
+          0.21866666666666668,
+          0.32
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.18266666666666667,
+        "unit_cost_hit_10pct_ci": [
+          0.14533333333333334,
+          0.22133333333333333
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.0,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.0,
+        0.0
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.0,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "D2/fresh": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2986666666666667,
+        "margin_hit_5pp_ci": [
+          0.25333333333333335,
+          0.344
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.16666666666666666,
+        "unit_cost_hit_10pct_ci": [
+          0.13066666666666665,
+          0.20533333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.6146666666666667,
+        "margin_hit_5pp_ci": [
+          0.576,
+          0.6533333333333333
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.24533333333333332,
+        "unit_cost_hit_10pct_ci": [
+          0.20533333333333334,
+          0.2866666666666667
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.316,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.26,
+        0.3720333333333328
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.07866666666666666,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.037333333333333336,
+        0.12
+      ]
+    },
+    "D2/reuse": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2986666666666667,
+        "margin_hit_5pp_ci": [
+          0.25333333333333335,
+          0.344
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.16666666666666666,
+        "unit_cost_hit_10pct_ci": [
+          0.13066666666666665,
+          0.20533333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2986666666666667,
+        "margin_hit_5pp_ci": [
+          0.25333333333333335,
+          0.344
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.16666666666666666,
+        "unit_cost_hit_10pct_ci": [
+          0.13066666666666665,
+          0.20533333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.0,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.0,
+        0.0
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.0,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.0,
+        0.0
+      ]
+    },
+    "D3@0.5/repeat": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.4706666666666667,
+        "margin_hit_5pp_ci": [
+          0.416,
+          0.5266666666666666
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.48133333333333334,
+        "unit_cost_hit_10pct_ci": [
+          0.42933333333333334,
+          0.536
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.656,
+        "margin_hit_5pp_ci": [
+          0.6013333333333334,
+          0.708
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.6853333333333333,
+        "unit_cost_hit_10pct_ci": [
+          0.6346666666666667,
+          0.7346666666666667
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.18533333333333332,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.14533333333333334,
+        0.22666666666666666
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.204,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.16266666666666665,
+        0.24666666666666667
+      ]
+    },
+    "D3@1/repeat": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.5346666666666666,
+        "margin_hit_5pp_ci": [
+          0.4786666666666667,
+          0.5893333333333334
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.5293333333333333,
+        "unit_cost_hit_10pct_ci": [
+          0.476,
+          0.584
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.732,
+        "margin_hit_5pp_ci": [
+          0.6826666666666666,
+          0.78
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.7373333333333333,
+        "unit_cost_hit_10pct_ci": [
+          0.6893333333333334,
+          0.784
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.19733333333333333,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.15866666666666668,
+        0.23733333333333334
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.208,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.16666666666666666,
+        0.25066666666666665
+      ]
+    },
+    "D3@2/repeat": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.604,
+        "margin_hit_5pp_ci": [
+          0.552,
+          0.656
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.652,
+        "unit_cost_hit_10pct_ci": [
+          0.6026666666666667,
+          0.7013333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.8013333333333333,
+        "margin_hit_5pp_ci": [
+          0.7586666666666667,
+          0.8426666666666667
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.808,
+        "unit_cost_hit_10pct_ci": [
+          0.7653333333333333,
+          0.8493333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.19733333333333333,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.15466666666666667,
+        0.24133333333333334
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.156,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.12,
+        0.192
+      ]
+    },
+    "D3o@0.5/repeat": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.268,
+        "margin_hit_5pp_ci": [
+          0.21863333333333362,
+          0.31866666666666665
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.264,
+        "unit_cost_hit_10pct_ci": [
+          0.22,
+          0.31066666666666665
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.3293333333333333,
+        "margin_hit_5pp_ci": [
+          0.28,
+          0.38
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.38,
+        "unit_cost_hit_10pct_ci": [
+          0.332,
+          0.428
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.06133333333333333,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.028,
+        0.09466666666666666
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.116,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.076,
+        0.156
+      ]
+    },
+    "D3o@1/repeat": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.2906666666666667,
+        "margin_hit_5pp_ci": [
+          0.24133333333333334,
+          0.34003333333333285
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.30266666666666664,
+        "unit_cost_hit_10pct_ci": [
+          0.25733333333333336,
+          0.34933333333333333
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.432,
+        "margin_hit_5pp_ci": [
+          0.3826333333333336,
+          0.484
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.516,
+        "unit_cost_hit_10pct_ci": [
+          0.4666666666666667,
+          0.5653333333333334
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.14133333333333334,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.1,
+        0.18266666666666667
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.21333333333333335,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.16933333333333334,
+        0.25866666666666666
+      ]
+    },
+    "D3o@2/repeat": {
+      "1": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.316,
+        "margin_hit_5pp_ci": [
+          0.268,
+          0.36533333333333334
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.38266666666666665,
+        "unit_cost_hit_10pct_ci": [
+          0.336,
+          0.43066666666666664
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "16": {
+        "n_rows": 750,
+        "margin_hit_5pp": 0.544,
+        "margin_hit_5pp_ci": [
+          0.496,
+          0.5933333333333334
+        ],
+        "a0_margin_hit_5pp": 0.284,
+        "unit_cost_hit_10pct": 0.6386666666666667,
+        "unit_cost_hit_10pct_ci": [
+          0.5906666666666667,
+          0.6866666666666666
+        ],
+        "a0_unit_cost_hit_10pct": 0.16
+      },
+      "gain_margin_hit_5pp_n16_vs_n1": 0.228,
+      "gain_margin_hit_5pp_n16_vs_n1_ci": [
+        0.1813000000000003,
+        0.2773333333333333
+      ],
+      "gain_unit_cost_hit_10pct_n16_vs_n1": 0.256,
+      "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+        0.21066666666666667,
+        0.30266666666666664
+      ]
+    }
+  }
+}

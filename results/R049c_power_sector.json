@@ -1,0 +1,392 @@
+{
+  "run": "R049c_power_sector",
+  "config": {
+    "part": "power_sector",
+    "plan": "refine-logs/EXPERIMENT_PLAN_20261026_r049.md",
+    "eval_seed": 1001,
+    "prior_seed": 2002,
+    "n_firms": 60,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      16
+    ],
+    "prior_models": {
+      "PM1": {
+        "patches": [
+          "CITY_RESIDUAL_SIGMA",
+          "FIRM_EFFICIENCY_SIGMA",
+          "FIRM_PREMIUM_SIGMA",
+          "PRICE_NOISE_DF"
+        ],
+        "extreme_share": 0.0
+      },
+      "PM2": {
+        "patches": [
+          "SECTORS"
+        ],
+        "extreme_share": 0.2
+      },
+      "PM3": {
+        "patches": [
+          "CITY_RESIDUAL_SIGMA",
+          "FIRM_EFFICIENCY_SIGMA",
+          "FIRM_PREMIUM_SIGMA",
+          "PRICE_NOISE_DF",
+          "SECTORS"
+        ],
+        "extreme_share": 0.0
+      }
+    },
+    "location_seed": 4949,
+    "drifts": [
+      0.01,
+      0.02,
+      0.05
+    ],
+    "smoke": false,
+    "total_seconds": 4.416169881820679
+  },
+  "result": {
+    "D1/fresh": {
+      "apparel_ecommerce": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.42063492063492064,
+        "gain_ci": [
+          0.30158730158730157,
+          0.5396825396825397
+        ]
+      },
+      "bakery_cafe": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 41,
+        "gain": 0.3008130081300813,
+        "gain_ci": [
+          0.17073170731707318,
+          0.42276422764227645
+        ]
+      },
+      "construction_sub": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.4603174603174603,
+        "gain_ci": [
+          0.30158730158730157,
+          0.6031746031746031
+        ]
+      },
+      "it_consulting": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.18253968253968253,
+        "gain_ci": [
+          0.047619047619047616,
+          0.31746031746031744
+        ]
+      },
+      "machine_shop": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 41,
+        "gain": 0.37398373983739835,
+        "gain_ci": [
+          0.23577235772357724,
+          0.4959349593495935
+        ]
+      },
+      "specialty_retail": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.2777777777777778,
+        "gain_ci": [
+          0.12698412698412698,
+          0.42063492063492064
+        ]
+      }
+    },
+    "D1p/fresh": {
+      "apparel_ecommerce": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.3888888888888889,
+        "gain_ci": [
+          0.25396825396825395,
+          0.5158730158730159
+        ]
+      },
+      "bakery_cafe": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 41,
+        "gain": 0.36585365853658536,
+        "gain_ci": [
+          0.2601626016260163,
+          0.4715447154471545
+        ]
+      },
+      "construction_sub": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.4444444444444444,
+        "gain_ci": [
+          0.3412698412698413,
+          0.5476190476190477
+        ]
+      },
+      "it_consulting": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.5079365079365079,
+        "gain_ci": [
+          0.3968253968253968,
+          0.6111111111111112
+        ]
+      },
+      "machine_shop": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 41,
+        "gain": 0.4715447154471545,
+        "gain_ci": [
+          0.37398373983739835,
+          0.5609756097560976
+        ]
+      },
+      "specialty_retail": {
+        "metric": "unit_cost_hit_10pct",
+        "n_firms": 42,
+        "gain": 0.40476190476190477,
+        "gain_ci": [
+          0.2698412698412698,
+          0.5396825396825397
+        ]
+      }
+    },
+    "D2/fresh": {
+      "apparel_ecommerce": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.35714285714285715,
+        "gain_ci": [
+          0.2222222222222222,
+          0.49206349206349204
+        ]
+      },
+      "bakery_cafe": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.23577235772357724,
+        "gain_ci": [
+          0.08943089430894309,
+          0.3821138211382114
+        ]
+      },
+      "construction_sub": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.4523809523809524,
+        "gain_ci": [
+          0.30952380952380953,
+          0.5952380952380952
+        ]
+      },
+      "it_consulting": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.23015873015873015,
+        "gain_ci": [
+          0.1111111111111111,
+          0.35714285714285715
+        ]
+      },
+      "machine_shop": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.34959349593495936,
+        "gain_ci": [
+          0.21951219512195122,
+          0.4796747967479675
+        ]
+      },
+      "specialty_retail": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.2698412698412698,
+        "gain_ci": [
+          0.1349206349206349,
+          0.40476190476190477
+        ]
+      }
+    },
+    "D3o@0.5/repeat": {
+      "apparel_ecommerce": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.03968253968253968,
+        "gain_ci": [
+          -0.031746031746031744,
+          0.11904761904761904
+        ]
+      },
+      "bakery_cafe": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.0,
+        "gain_ci": [
+          -0.024390243902439025,
+          0.024390243902439025
+        ]
+      },
+      "construction_sub": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.18253968253968253,
+        "gain_ci": [
+          0.0873015873015873,
+          0.2857142857142857
+        ]
+      },
+      "it_consulting": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.0,
+        "gain_ci": [
+          -0.09523809523809523,
+          0.09523809523809523
+        ]
+      },
+      "machine_shop": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.032520325203252036,
+        "gain_ci": [
+          -0.04878048780487805,
+          0.12195121951219512
+        ]
+      },
+      "specialty_retail": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.1111111111111111,
+        "gain_ci": [
+          0.03968253968253968,
+          0.19047619047619047
+        ]
+      }
+    },
+    "D3o@1/repeat": {
+      "apparel_ecommerce": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.10317460317460317,
+        "gain_ci": [
+          0.015873015873015872,
+          0.1984126984126984
+        ]
+      },
+      "bakery_cafe": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.0,
+        "gain_ci": [
+          -0.024390243902439025,
+          0.024390243902439025
+        ]
+      },
+      "construction_sub": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.2619047619047619,
+        "gain_ci": [
+          0.15079365079365079,
+          0.373015873015873
+        ]
+      },
+      "it_consulting": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.23015873015873015,
+        "gain_ci": [
+          0.10317460317460317,
+          0.35714285714285715
+        ]
+      },
+      "machine_shop": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.15447154471544716,
+        "gain_ci": [
+          0.07317073170731707,
+          0.24390243902439024
+        ]
+      },
+      "specialty_retail": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.09523809523809523,
+        "gain_ci": [
+          -0.015873015873015872,
+          0.21428571428571427
+        ]
+      }
+    },
+    "D3o@2/repeat": {
+      "apparel_ecommerce": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.12698412698412698,
+        "gain_ci": [
+          0.007936507936507936,
+          0.24603174603174602
+        ]
+      },
+      "bakery_cafe": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.032520325203252036,
+        "gain_ci": [
+          -0.016260162601626018,
+          0.08130081300813008
+        ]
+      },
+      "construction_sub": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.38095238095238093,
+        "gain_ci": [
+          0.2777777777777778,
+          0.49206349206349204
+        ]
+      },
+      "it_consulting": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.36507936507936506,
+        "gain_ci": [
+          0.23809523809523808,
+          0.48412698412698413
+        ]
+      },
+      "machine_shop": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 41,
+        "gain": 0.17886178861788618,
+        "gain_ci": [
+          0.056910569105691054,
+          0.3008130081300813
+        ]
+      },
+      "specialty_retail": {
+        "metric": "margin_hit_5pp",
+        "n_firms": 42,
+        "gain": 0.2777777777777778,
+        "gain_ci": [
+          0.15079365079365079,
+          0.4126984126984127
+        ]
+      }
+    }
+  }
+}

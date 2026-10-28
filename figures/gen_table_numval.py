@@ -1,4 +1,4 @@
-"""Appendix table: numerical validation of the D2 reuse-side attackers (R045 and R047).
+"""Table X (supplementary material): numerical validation of the D2 reuse-side attackers (R045 and R047).
 
 Sources: R045_d2_joint_linked.json (default smoothing 0.03, 400 draws), R045_d2_joint_sensitivity.json,
 R047a_d2_joint_smoothing_obs0.01_nuis{400,1600}.json, R047b_d2_exact_budget.json. Margin hits (+-5 pp),

@@ -1,0 +1,158 @@
+{
+  "run": "R049a_joint_pm3",
+  "config": {
+    "part": "joint",
+    "plan": "refine-logs/EXPERIMENT_PLAN_20261026_r049.md",
+    "eval_seed": 1001,
+    "prior_seed": 2002,
+    "n_firms": 60,
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "n_values": [
+      1,
+      16
+    ],
+    "prior_models": {
+      "PM1": {
+        "patches": [
+          "CITY_RESIDUAL_SIGMA",
+          "FIRM_EFFICIENCY_SIGMA",
+          "FIRM_PREMIUM_SIGMA",
+          "PRICE_NOISE_DF"
+        ],
+        "extreme_share": 0.0
+      },
+      "PM2": {
+        "patches": [
+          "SECTORS"
+        ],
+        "extreme_share": 0.2
+      },
+      "PM3": {
+        "patches": [
+          "CITY_RESIDUAL_SIGMA",
+          "FIRM_EFFICIENCY_SIGMA",
+          "FIRM_PREMIUM_SIGMA",
+          "PRICE_NOISE_DF",
+          "SECTORS"
+        ],
+        "extreme_share": 0.0
+      }
+    },
+    "location_seed": 4949,
+    "drifts": [
+      0.01,
+      0.02,
+      0.05
+    ],
+    "smoke": false,
+    "total_seconds": 2578.4086730480194
+  },
+  "result": {
+    "PM3": {
+      "D2/fresh": {
+        "1": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.20555555555555555,
+          "margin_hit_5pp_ci": [
+            0.12222222222222222,
+            0.3
+          ],
+          "a0_margin_hit_5pp": 0.16666666666666666,
+          "unit_cost_hit_10pct": 0.10555555555555556,
+          "unit_cost_hit_10pct_ci": [
+            0.044444444444444446,
+            0.17777777777777778
+          ],
+          "a0_unit_cost_hit_10pct": 0.08333333333333333
+        },
+        "16": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.5333333333333333,
+          "margin_hit_5pp_ci": [
+            0.45,
+            0.6166666666666667
+          ],
+          "a0_margin_hit_5pp": 0.16666666666666666,
+          "unit_cost_hit_10pct": 0.21666666666666667,
+          "unit_cost_hit_10pct_ci": [
+            0.15555555555555556,
+            0.2833333333333333
+          ],
+          "a0_unit_cost_hit_10pct": 0.08333333333333333
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": 0.3277777777777778,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          0.20555555555555555,
+          0.4444444444444444
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": 0.1111111111111111,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          0.03888888888888889,
+          0.18333333333333332
+        ]
+      },
+      "D2/reuse": {
+        "1": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.20555555555555555,
+          "margin_hit_5pp_ci": [
+            0.12222222222222222,
+            0.3
+          ],
+          "a0_margin_hit_5pp": 0.16666666666666666,
+          "unit_cost_hit_10pct": 0.10555555555555556,
+          "unit_cost_hit_10pct_ci": [
+            0.044444444444444446,
+            0.17777777777777778
+          ],
+          "a0_unit_cost_hit_10pct": 0.08333333333333333
+        },
+        "16": {
+          "n_rows": 180,
+          "margin_hit_5pp": 0.2222222222222222,
+          "margin_hit_5pp_ci": [
+            0.1388888888888889,
+            0.31666666666666665
+          ],
+          "a0_margin_hit_5pp": 0.16666666666666666,
+          "unit_cost_hit_10pct": 0.15555555555555556,
+          "unit_cost_hit_10pct_ci": [
+            0.09444444444444444,
+            0.22777777777777777
+          ],
+          "a0_unit_cost_hit_10pct": 0.08333333333333333
+        },
+        "gain_margin_hit_5pp_n16_vs_n1": 0.016666666666666666,
+        "gain_margin_hit_5pp_n16_vs_n1_ci": [
+          -0.022222222222222223,
+          0.06111111111111111
+        ],
+        "gain_unit_cost_hit_10pct_n16_vs_n1": 0.05,
+        "gain_unit_cost_hit_10pct_n16_vs_n1_ci": [
+          -0.005555555555555556,
+          0.10555555555555556
+        ]
+      },
+      "fresh_minus_reuse": {
+        "margin_hit_5pp": {
+          "contrast": 0.3111111111111111,
+          "contrast_ci": [
+            0.19444444444444445,
+            0.4222222222222222
+          ]
+        },
+        "unit_cost_hit_10pct": {
+          "contrast": 0.06111111111111111,
+          "contrast_ci": [
+            -0.011111111111111112,
+            0.13333333333333333
+          ]
+        }
+      }
+    }
+  }
+}
